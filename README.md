@@ -29,3 +29,16 @@
 проверяем: ```ls -a ~/.ssh```   
 должно быть два файла: один с .pub, другой без  
 япи!
+
+2. пора привязать ssh ключ к гитхабу!
+что нам нужно?  
+```# скопировать содержимое ключа в буфер обмена:
+$ clip < ~/.ssh/id_rsa.pub
+# для ed25519:
+$ clip < ~/.ssh/id_ed25519.pub```  
+потом переходим на сайт гитхаба  
+settings > ssh and gpg keys > new ssh key > называем ключ > тип ключа - authentication key > и в поле key вставляем все что скопировалось > нажимаем add ssh key  
+проверим правильность: ```$ ssh -T git@github.com```  
+переходим на эту [ссылку](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints)  
+если совпало вводим "yes"  
+ура победа!
