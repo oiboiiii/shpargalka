@@ -78,5 +78,5 @@ settings > ssh and gpg keys > new ssh key > называем ключ > тип �
 graph TD;
     untracked -- "git add" --> staged;
     staged -- "git commit -m" --> tracked/comitted;
-    tracked/commited -- "git push" --> seen on github;
+    tracked/committed -- "git push" --> seen on github;
 ```
