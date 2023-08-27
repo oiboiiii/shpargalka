@@ -77,8 +77,8 @@ settings > ssh and gpg keys > new ssh key > называем ключ > тип �
 ```mermaid
 graph LR;
   untracked -- "git add" --> staged;
-  staged    -- "???"     --> tracked/comitted;
-
+  staged    -- "git commit"     --> tracked/comitted;
+  tracked/comitted -- "git push" --> github;
 %% стрелка без текста для примера: 
   A --> B;
 ```
