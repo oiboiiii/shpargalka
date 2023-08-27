@@ -75,7 +75,7 @@ settings > ssh and gpg keys > new ssh key > называем ключ > тип �
 ### немного про жизненный цикл файла
 
 ```mermaid 
-graph LR;
+graph TD;
     untracked -- "git add" --> staged;
     staged -- "git commit -m" --> tracked/comitted;
     tracked/commited -- "git push" --> seen on github;
