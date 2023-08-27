@@ -35,7 +35,8 @@
 ```# скопировать содержимое ключа в буфер обмена:
 $ clip < ~/.ssh/id_rsa.pub
 # для ed25519:
-$ clip < ~/.ssh/id_ed25519.pub```  
+$ clip < ~/.ssh/id_ed25519.pub```
+
 потом переходим на сайт гитхаба  
 settings > ssh and gpg keys > new ssh key > называем ключ > тип ключа - authentication key > и в поле key вставляем все что скопировалось > нажимаем add ssh key  
 проверим правильность: ```$ ssh -T git@github.com```  
